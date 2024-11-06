@@ -3,12 +3,11 @@ import GithubLineIcon from "remixicon-react/GithubLineIcon";
 import InstagramLineIcon from "remixicon-react/InstagramLineIcon";
 import YoutubeLineIcon from "remixicon-react/YoutubeLineIcon";
 import FacebookLineIcon from "remixicon-react/FacebookLineIcon"; // as a placeholder
-import LinkedInBoxLineIcon from "remixicon-react/LinkedInBoxLineIcon"; // as a placeholder
 import MailLineIcon from "remixicon-react/MailLineIcon"; // as a placeholder
 
 export const HeroIcons = [
   <GithubLineIcon key={1} />,
-  <LinkedInBoxLineIcon key={2} />,
+  <LinkedInLogoIcon key={2} />,
   <MailLineIcon key={3} />,
   <InstagramLineIcon key={4} />,
   <FacebookLineIcon key={5} />,
@@ -28,6 +27,7 @@ import HistoryLineIcon from "remixicon-react/HistoryLineIcon";
 import BriefcaseLineIcon from "remixicon-react/BriefcaseLineIcon";
 import UserStarLineIcon from "remixicon-react/UserStarLineIcon";
 import { Contact2Icon } from "lucide-react";
+import { LinkedInLogoIcon } from "@radix-ui/react-icons";
 
 // import ArrowLeftDoubleLineIcon from "remixicon-react/ArrowLeftDoubleLineIcon";
 

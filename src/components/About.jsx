@@ -3,7 +3,7 @@ import React from "react";
 import Heading from "./sub/Heading";
 import Image from "next/image";
 import Achievements from "./sub/Achievements";
-import { arrowLeftLineIcon, downloadIcon, aboutData } from "@/asserts";
+import { downloadIcon, aboutData } from "@/asserts";
 import { TypeAnimation } from "react-type-animation";
 import ShimmerButton from "./ui/shimmer-button";
 import ArrowLeftSFillIcon from "remixicon-react/ArrowLeftSFillIcon";
@@ -79,16 +79,17 @@ const About = () => {
             expertise to deliver exceptional results.
           </div>
           <ShimmerButton
+            onClick={() =>
+              window.open(
+                "https://drive.google.com/file/d/1d7IljN3Pe9tGm9ek0oSx9opM59YFW_9Q/view?usp=drivesdk",
+                "_blank"
+              )
+            }
             background={"#ef4444"}
             shimmerSize={"0.2em"}
             className=" shadow-2xl  mt-6 rounded-full  text-white px-3 py-2 font-light hover:scale-[1.05] transition-transform"
           >
-            <a
-              href="https://drive.google.com/file/d/1d7IljN3Pe9tGm9ek0oSx9opM59YFW_9Q/view?usp=drivesdk"
-              className="w-max flex items-center gap-x-2 text-white"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a className="w-max flex items-center gap-x-2 text-white">
               <span>Download CV</span>
               <span>{downloadIcon}</span>
             </a>
