@@ -26,7 +26,7 @@ import UserLineIcon from "remixicon-react/UserLineIcon";
 import HistoryLineIcon from "remixicon-react/HistoryLineIcon";
 import BriefcaseLineIcon from "remixicon-react/BriefcaseLineIcon";
 import UserStarLineIcon from "remixicon-react/UserStarLineIcon";
-import { Contact2Icon } from "lucide-react";
+import { Award, Building2, Calendar, Code2, Contact2Icon } from "lucide-react";
 import { LinkedInLogoIcon } from "@radix-ui/react-icons";
 
 // import ArrowLeftDoubleLineIcon from "remixicon-react/ArrowLeftDoubleLineIcon";
@@ -66,59 +66,69 @@ export const aboutText = "hi im a ";
 
 export const experienceData = [
   {
-    year: 2015,
-
-    title: "Foundation and Basics",
-
-    education:
-      "High School Diploma: Focus on computer science, mathematics, and art/design courses.",
-
-    experience: [
-      "Basic HTML/CSS: Learn through online tutorials and courses.",
-      "Personal Projects: Create simple personal websites or blogs.",
-    ],
-  },
-  {
     year: 2018,
-
-    title: "Foundation and Basics",
-
+    title: "Engineering Foundation",
     education:
-      "High School Diploma: Focus on computer science, mathematics, and art/design courses.",
-
+      "Bachelor's in Mechanical Engineering, CV Raman Global University, Bhubaneswar",
     experience: [
-      "Basic HTML/CSS: Learn through online tutorials and courses.",
-      "Personal Projects: Create simple personal websites or blogs.",
+      "Comprehensive study in mechanical design principles and engineering fundamentals",
+      "Developed strong analytical and problem-solving skills through practical projects",
+      "Participated in university technical competitions and workshops",
+      "Final year project focused on manufacturing process optimization",
     ],
+    description:
+      "Laid the groundwork for a career bridging mechanical engineering and technology, developing crucial analytical thinking and project management skills that would later prove valuable in software development.",
   },
   {
     year: 2019,
-
-    title: "Foundation and Basics",
-
-    education:
-      "High School Diploma: Focus on computer science, mathematics, and art/design courses.",
-
+    title: "CNC Programming Specialist",
+    company: "Central Tool Room & Training Centre (CTTC)",
+    department: "R&D Department",
     experience: [
-      "Basic HTML/CSS: Learn through online tutorials and courses.",
-      "Personal Projects: Create simple personal websites or blogs.",
+      "Mastered CNC programming for complex manufacturing processes",
+      "Developed expertise in MasterCAM for generating efficient NC codes",
+      "Led multiple R&D projects improving manufacturing efficiency",
+      "Collaborated with cross-functional teams for prototype development",
+      "Optimized machining parameters for better production outcomes",
     ],
+    description:
+      "Specialized in advanced manufacturing technologies, developing strong technical skills and programming fundamentals through hands-on experience with CNC machinery and automated systems.",
   },
   {
-    year: 2022,
-
-    title: "Advanced Learning and Early Experience",
-
-    education:
-      "'Associate's Degree in Web Development or Design: Enroll in a 2-year program covering web development and design principles.'",
+    year: 2023,
+    title: "Transition to Full Stack Development",
+    education: "Professional MERN Stack Development Training",
     experience: [
-      "Freelance Work: Take on small freelance projects to build a portfolio.",
-
-      "Online Courses and Certifications: Learn JavaScript, responsive design, and UX/UI design.",
+      "Mastered fundamental web development technologies (HTML, CSS, JavaScript)",
+      "Built comprehensive understanding of the MERN stack ecosystem",
+      "Developed multiple full-stack applications as part of coursework",
+      "Focused on modern development practices and clean code principles",
+      "Created portfolio projects demonstrating full-stack capabilities",
     ],
+    description:
+      "Made a strategic career transition into software development, leveraging engineering background to rapidly acquire full-stack development skills and modern web technologies.",
+  },
+  {
+    year: 2024,
+    title: "MERN Stack Developer",
+    company: "Smartters Pvt Ltd",
+    experience: [
+      "Spearheaded backend API development for multiple client projects",
+      "Implemented innovative multilanguage feature utilized across various projects",
+      "Designed and developed EVA data model enabling dynamic data entry for MongoDB and SQL",
+      "Collaborated with cross-functional teams to deliver robust solutions",
+      "Optimized API performance and database queries for better scalability",
+    ],
+    achievements: [
+      "Successfully implemented multilingual support system used across multiple projects",
+      "Developed flexible EVA data model improving data management efficiency",
+      "Reduced API response times by 40% through optimization",
+      "Mentored junior developers in backend development practices",
+    ],
+    description:
+      "Currently leading backend development initiatives at Smartters, focusing on creating scalable solutions and implementing innovative features that enhance project capabilities while maintaining high performance standards.",
   },
 ];
-
 // skills section
 
 export const skillsData = [
@@ -129,7 +139,7 @@ export const skillsData = [
 
   {
     name: "ReactJS",
-    icon: "/skills/react.png",
+    icon: "/skills/reacticon.png",
   },
   {
     name: "NodeJs",
@@ -243,7 +253,11 @@ export const projectsData = [
   {
     name: "Duramix.com ERP System",
     desc: "A comprehensive ERP solution designed for Duramix.com to manage business operations, inventory, billing, and customer relationships efficiently.",
-    imageurl: "https://images.unsplash.com/photo-1564866657315-1003f40d1b2a", // ERP-themed image
+    images: [
+      "https://duramix-erp-dev.s3.ap-south-1.amazonaws.com/12/images/2024/1107/1731004212891_duramixcrm1.png",
+      " https://duramix-erp-dev.s3.ap-south-1.amazonaws.com/12/images/2024/1107/1731004293412_duramix%20hrms.png",
+      "https://duramix-erp-dev.s3.ap-south-1.amazonaws.com/12/images/2024/1107/1731005327772_duramix%20crm.png",
+    ], // ERP-themed image
     url: "https://duramix.com",
     tech: [
       "FeatherJs",
@@ -259,21 +273,33 @@ export const projectsData = [
   {
     name: "Smartters ERP System",
     desc: "An enterprise resource planning system developed for Smartters to streamline internal operations, including resource allocation, financial management, and data analytics.",
-    imageurl: "https://images.unsplash.com/photo-1581091012184-5c9bdce656e5", // ERP-themed image
+    images: [
+      "https://duramix-erp-dev.s3.ap-south-1.amazonaws.com/12/images/2024/1107/1731005922032_Smasrtter%20erp3.png",
+      "https://duramix-erp-dev.s3.ap-south-1.amazonaws.com/12/images/2024/1107/1731006036413_Smasrtter%20erp4.png",
+    ], // ERP-themed image
     url: "https://smartters.com",
     tech: ["FeatherJs", "ReactJS", "NodeJs", "MongoDb", "TailwindCSS", "Figma"],
   },
   {
-    name: "Duramix.com HRMS Module",
-    desc: "A human resource management module for Duramix.com, offering tools for employee data management, payroll processing, and attendance tracking.",
-    imageurl: "https://images.unsplash.com/photo-1584634731339-634f84de1221", // HR management-themed image
-    url: "https://duramix.com/hrms",
-    tech: ["FeatherJs", "ReactJS", "NodeJs", "MongoDb", "TailwindCSS"],
+    name: "Smartters HRMS Module",
+    desc: "A human resource management module for smartter.pvt.ltd, offering tools for employee data management, payroll processing, and attendance tracking.",
+    images: [
+      "https://duramix-erp-dev.s3.ap-south-1.amazonaws.com/12/images/2024/1107/1731004478291_Smasrtter%20erp2.png",
+      "https://duramix-erp-dev.s3.ap-south-1.amazonaws.com/12/images/2024/1107/1731005531502_smartter%20hrms.png",
+      "https://duramix-erp-dev.s3.ap-south-1.amazonaws.com/12/images/2024/1107/1731005672248_smartter%20hrms1.png",
+    ], // ERP-themed image
+    url: "https://smartters.com",
+    tech: ["FeatherJs", "ReactJS", "NodeJs", "MongoDb", "TailwindCSS", "Figma"],
   },
+
   {
     name: "Marketplace Platform",
     desc: "An online marketplace allowing vendors to list products and customers to shop, with features like search filters, payment integration, and order tracking.",
-    imageurl: "https://images.unsplash.com/photo-1519389950473-47ba0277781c", // E-commerce/marketplace-themed image
+    images: [
+      "https://duramix-erp-dev.s3.ap-south-1.amazonaws.com/12/images/2024/1107/1731006725384_marketplace1.png",
+      "https://duramix-erp-dev.s3.ap-south-1.amazonaws.com/12/images/2024/1107/1731006765822_marketplace3.png",
+      "https://duramix-erp-dev.s3.ap-south-1.amazonaws.com/12/images/2024/1107/1731006786885_marketplace2.png",
+    ], // E-commerce/marketplace-themed image
     url: "https://github.com/yourusername/marketplace",
     tech: [
       "FeatherJs",
@@ -284,40 +310,15 @@ export const projectsData = [
       "JavaScript",
     ],
   },
+
   {
-    name: "Devpool",
-    desc: "An open-source dynamic job portal connecting job seekers with employers. It features job posting, application tracking, and real-time notifications.",
-    imageurl: "https://images.unsplash.com/photo-1551836022-d5d88e9218df", // Job portal-themed image
-    url: "https://github.com/yourusername/devpool",
-    tech: [
-      "NextJs",
-      "ReactJS",
-      "NodeJs",
-      "ExpressJs",
-      "MongoDb",
-      "TailwindCSS",
-      "TypeScript",
-    ],
-  },
-  {
-    name: "Restaurant POS System",
-    desc: "A web and mobile POS system for restaurant owners to manage orders, billing, and payments seamlessly. Includes features like menu customization, order tracking, and integrated payment solutions.",
-    imageurl: "https://images.unsplash.com/photo-1559028012-d6367a97295b", // Restaurant-themed image
-    url: "https://github.com/yourusername/restaurant-pos",
-    tech: [
-      "ReactJS",
-      "NodeJs",
-      "ExpressJs",
-      "MongoDb",
-      "HTML",
-      "CSS",
-      "JavaScript",
-    ],
-  },
-  {
-    name: "Home Services Platform",
+    name: "Sabkuch.uk",
     desc: "A web app for providing home services like cleaning, plumbing, and AC repair. Users can book services, and providers can manage appointments and customer inquiries.",
-    imageurl: "https://images.unsplash.com/photo-1581579185308-78dc6ce0f8df", // Home services-themed image
+    images: [
+      "https://duramix-erp-dev.s3.ap-south-1.amazonaws.com/12/images/2024/1107/1731004362018_Sabukuch.uk.png",
+      "https://duramix-erp-dev.s3.ap-south-1.amazonaws.com/12/images/2024/1107/1731006341302_Sabukuch.uk2.png",
+      "https://duramix-erp-dev.s3.ap-south-1.amazonaws.com/12/images/2024/1107/1731006324677_Sabukuch.uk1.png",
+    ], // Home services-themed image
     url: "https://github.com/yourusername/home-services",
     tech: [
       "NextJs",
@@ -328,5 +329,32 @@ export const projectsData = [
       "TailwindCSS",
       "Figma",
     ],
+  },
+];
+
+export const stats = [
+  {
+    title: "Company",
+    value: "Smartter Pvt Ltd",
+    subtext: "Technology Solutions",
+    icon: <Building2 size={24} />,
+  },
+  {
+    title: "Position",
+    value: "MERN Stack",
+    subtext: "Developer",
+    icon: <Code2 size={24} />,
+  },
+  {
+    title: "Experience",
+    value: "4",
+    subtext: "Months",
+    icon: <Calendar size={24} />,
+  },
+  {
+    title: "Tech Stack",
+    value: "Full Stack",
+    subtext: "Development",
+    icon: <Award size={24} />,
   },
 ];

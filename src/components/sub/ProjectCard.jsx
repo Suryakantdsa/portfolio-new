@@ -14,10 +14,10 @@ const ProjectCard = ({ data, index }) => {
         setShow((show) => !show);
       }}
       transition={{ duration: 1, type: "spring", stiffness: 100 }}
-      className="relative  max-w-[250px] sm:w-full h-max border border-yellow-400 rounded-lg cursor-pointer"
+      className="relative  sm:max-w-[250px] sm:w-full h-max border border-yellow-400 rounded-lg cursor-pointer"
     >
       <Image
-        src={data.imageurl}
+        src={data.images[0]}
         alt="projectimage "
         width={400}
         height={400}

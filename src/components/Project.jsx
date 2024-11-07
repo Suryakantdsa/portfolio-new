@@ -4,6 +4,7 @@ import Heading from "./sub/Heading";
 import ProjectCard from "./sub/ProjectCard";
 import { projectsButton, projectsData } from "@/asserts";
 import { motion, animate } from "framer-motion";
+import { ImageSliderCard, ImagesSlider } from "./sub/ImageSliderCard";
 
 const Project = () => {
   const [tech, setTech] = useState("All");
@@ -47,11 +48,14 @@ const Project = () => {
               tech === "All" ? true : item === tech
             );
           })
-          .map((project, i) => (
-            <motion.div key={`id-${i}`} layout>
-              <ProjectCard data={project} index={i} />
-            </motion.div>
-          ))}
+          .map((project, i) => {
+            return (
+              <motion.div key={`id-${i}`} layout>
+                <ProjectCard data={project} index={i} />
+                {/* <ImageSliderCard data={project} index={i} /> */}
+              </motion.div>
+            );
+          })}
       </div>
     </div>
   );

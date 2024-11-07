@@ -57,7 +57,9 @@ const Experience = () => {
                 {data.title}
               </h1>
               <p className="text-gray-800 dark:text-white transition-colors ">
-                <span className="block font-light">Education</span>
+                <span className="block font-light">
+                  {data.company || "Education"}
+                </span>
                 <span className="block pl-2 font-extralight">
                   {data.education}
                 </span>

@@ -3,10 +3,11 @@ import React from "react";
 import Heading from "./sub/Heading";
 import Image from "next/image";
 import Achievements from "./sub/Achievements";
-import { downloadIcon, aboutData } from "@/asserts";
+import { downloadIcon, aboutData, stats } from "@/asserts";
 import { TypeAnimation } from "react-type-animation";
 import ShimmerButton from "./ui/shimmer-button";
 import ArrowLeftSFillIcon from "remixicon-react/ArrowLeftSFillIcon";
+import { StatCard } from "./sub/StatsCard";
 
 const About = () => {
   return (
@@ -96,14 +97,16 @@ const About = () => {
           </ShimmerButton>
         </div>
       </div>
-      <div className=" mt-20 w-full flex flex-wrap items-center justify-between gap-x-7 gap-y-10 border p-4 shadow-xl rounded-xl dark:bg-zinc-700 bg-white transition-colors">
-        {aboutData.map((item, idx) => (
-          <Achievements
-            title={item.title}
-            amount={item.amount}
-            icon={item.icon}
-            key={idx}
-          />
+      <div className="w-full mt-16 grid  xs:grid-cols-1 md:grid-cols-2 grid-cols-4 gap-6 border p-4 shadow-xl rounded-xl dark:bg-zinc-700 bg-white transition-colors">
+        {stats.map((stat, idx) => (
+          // <Achievements
+          //   title={item.title}
+          //   amount={item.amount}
+          //   icon={item.icon}
+          //   key={idx}
+          // />
+
+          <StatCard key={idx} {...stat} />
         ))}
       </div>
     </div>
