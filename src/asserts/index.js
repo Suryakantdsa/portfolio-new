@@ -347,8 +347,8 @@ export const stats = [
   },
   {
     title: "Experience",
-    value: "4",
-    subtext: "Months",
+    value: "1",
+    subtext: "Years",
     icon: <Calendar size={24} />,
   },
   {
