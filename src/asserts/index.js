@@ -1,18 +1,21 @@
 //hero
-import GithubLineIcon from "remixicon-react/GithubLineIcon";
-import InstagramLineIcon from "remixicon-react/InstagramLineIcon";
-import YoutubeLineIcon from "remixicon-react/YoutubeLineIcon";
-import FacebookLineIcon from "remixicon-react/FacebookLineIcon"; // as a placeholder
-import MailLineIcon from "remixicon-react/MailLineIcon"; // as a placeholder
 
 export const HeroIcons = [
-  <GithubLineIcon key={1} />,
-  <LinkedInLogoIcon key={2} />,
-  <MailLineIcon key={3} />,
-  <InstagramLineIcon key={4} />,
-  <FacebookLineIcon key={5} />,
-  <YoutubeLineIcon key={6} />,
+  { icon: <RiGithubLine key={1} />, url: "https://github.com/Suryakantdsa" },
+  // <LinkedInLogoIcon />,
+  {
+    icon: <Linkedin key={2} />,
+    url: "https://www.linkedin.com/in/suryakant-das-7b657814b/",
+  },
+  { icon: <MailIcon key={3} />, url: "mailto:suryakantadasbabuni@gmail.com" },
+  { icon: <SendIcon key={5} />, url: "https://t.me/devsuryakantdas" }, // Opens Telegram
+  { icon: <RiWhatsappLine key={6} />, url: "https://wa.me/7504725674" },
+  // <YoutubeLineIcon key={6} />,
 ];
+
+{
+  /* <Linkedin />; */
+}
 
 // about section
 import GithubFillIcon from "remixicon-react/GithubFillIcon";
@@ -26,8 +29,21 @@ import UserLineIcon from "remixicon-react/UserLineIcon";
 import HistoryLineIcon from "remixicon-react/HistoryLineIcon";
 import BriefcaseLineIcon from "remixicon-react/BriefcaseLineIcon";
 import UserStarLineIcon from "remixicon-react/UserStarLineIcon";
-import { Award, Building2, Calendar, Code2, Contact2Icon } from "lucide-react";
+import {
+  Award,
+  Building2,
+  Calendar,
+  Code2,
+  Contact2Icon,
+  Facebook,
+  Instagram,
+  Lin,
+  MailIcon,
+  SendIcon,
+} from "lucide-react";
 import { LinkedInLogoIcon } from "@radix-ui/react-icons";
+import { Linkedin } from "lucide-react";
+import { RiGithubLine, RiWhatsappLine } from "@remixicon/react";
 
 // import ArrowLeftDoubleLineIcon from "remixicon-react/ArrowLeftDoubleLineIcon";
 

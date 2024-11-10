@@ -5,7 +5,7 @@ import React from "react";
 
 const Navbar = ({ id }) => {
   return (
-    <div className="w-[70px] h-full fixed left-0 top-0 flex flex-col justify-between border-r border-gray-200 px-4 py-10 xl:py-6 z-10 shadow-xl">
+    <div className="w-[75px] h-full fixed left-0 top-0 flex flex-col justify-between border-r border-gray-200 px-4 py-10 xl:py-6 z-10 shadow-xl">
       <Link href="/#home">
         <span className="text-3xl font-semibold text-red-400">SD</span>
         <span className="block w-max rotate-90 origin-bottom text-[12px] font-semibold mt-3 sm:-translate-x-4 sm:mt-6 dark:text-zinc-200 tracking-widest">

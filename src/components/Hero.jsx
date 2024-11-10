@@ -96,13 +96,15 @@ const Hero = () => {
             I make the internet do cool tricks 🤹‍♂️ – from front 🎨 to back 💻!
           </p>
           <div className=" flex mt-4 justify-center text-3xl gap-x-5 text-yellow-600">
-            {HeroIcons.map((icon, i) => (
+            {HeroIcons.map((each, i) => (
               <Link
-                href="/"
+                href={each.url}
                 key={i}
                 className="rounded-lg hover:bg-red-400 hover:text-white transition-colors"
+                target="_blank" // Open in a new tab (optional)
+                rel="noopener noreferrer" //
               >
-                {icon}
+                {each.icon}
               </Link>
             ))}
           </div>

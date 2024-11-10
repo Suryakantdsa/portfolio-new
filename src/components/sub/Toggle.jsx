@@ -22,7 +22,7 @@ const Toggle = ({ children }) => {
       typeof window !== undefined &&
       window.matchMedia("(prefers-color-scheme:dark)").matches;
     if (darkTheme === undefined) {
-      console.log(setDarkTheme);
+      // console.log(setDarkTheme);
       systemTheme ? addDarkTheme() : removeDarkTheme();
     } else {
       darkThemeParsed ? addDarkTheme() : removeDarkTheme();
