@@ -8,6 +8,7 @@ export const HeroIcons = [
     url: "https://www.linkedin.com/in/suryakant-das-7b657814b/",
   },
   { icon: <MailIcon key={3} />, url: "mailto:suryakantadasbabuni@gmail.com" },
+  { icon: <RiTwitterXLine key={4} />, url: "https://x.com/_1996surya" },
   { icon: <SendIcon key={5} />, url: "https://t.me/devsuryakantdas" }, // Opens Telegram
   { icon: <RiWhatsappLine key={6} />, url: "https://wa.me/7504725674" },
   // <YoutubeLineIcon key={6} />,
@@ -43,7 +44,12 @@ import {
 } from "lucide-react";
 import { LinkedInLogoIcon } from "@radix-ui/react-icons";
 import { Linkedin } from "lucide-react";
-import { RiGithubLine, RiWhatsappLine } from "@remixicon/react";
+import {
+  RiGithubLine,
+  RiTwitterLine,
+  RiTwitterXLine,
+  RiWhatsappLine,
+} from "@remixicon/react";
 
 // import ArrowLeftDoubleLineIcon from "remixicon-react/ArrowLeftDoubleLineIcon";
 
