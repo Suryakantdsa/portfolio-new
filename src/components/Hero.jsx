@@ -100,7 +100,7 @@ const Hero = () => {
               <Link
                 href={each.url}
                 key={i}
-                className="rounded-lg hover:bg-red-400 hover:text-white transition-colors"
+                className="rounded-lg p-1 hover:bg-red-400 hover:text-white transition-colors"
                 target="_blank" // Open in a new tab (optional)
                 rel="noopener noreferrer" //
               >
