@@ -82,7 +82,7 @@ const About = () => {
           <ShimmerButton
             onClick={() =>
               window.open(
-                "https://drive.google.com/file/d/1nsgA1EPSO9BOHUyIt-sE93s8NaljYKFd/view?usp=drivesdk",
+                "https://drive.google.com/file/d/1-LZ6bClCFcqF0SGpf_SZyHUOMf9ysOz9/view?usp=drivesdk",
                 "_blank"
               )
             }
